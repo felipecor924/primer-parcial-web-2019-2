@@ -9,8 +9,8 @@ document.querySelector('#enviar').addEventListener('click', function() {
 	pass = document.querySelector("#password").value;
 	console.log(user);
 
-	if("admin" == user) {
-		if("1234" == pass) {
+	if(user =="admin") {
+		if(pass=="1234") {
 			console.log(true);
 			localStorage.setItem("usuario",user);
 			localStorage.setItem("password",pass);

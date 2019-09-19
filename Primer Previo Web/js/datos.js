@@ -9,7 +9,7 @@ function traerDatos() {
 
 	const xhttp = new XMLHttpRequest();
 
-	xhttp.open('GET', '../json/cartas.json');
+	xhttp.open('GET', 'https://github.com/felipecor924/primer-parcial-web-2019-2/blob/master/Primer%20Previo%20Web/json/cartas.json');
 
 	xhttp.send();
 	xhttp.onreadystatechange = function(){

@@ -7,46 +7,150 @@
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
 
 	<link rel="stylesheet" href="../css/style.css" class="css">
+
 	
 </head>
 <body>
 	<div class="container">
 		<header>
-			<h1>Utilizando Ajax</h1>
+			<h1>SHOWDOWN</h1>
 		</header>
 		<div class="row">
-			<section class="col-9">
-				<button id="boton">Cargar</button>
-				<table id="table7" class="table table-striped">
-					<thead>
-						<tr>
-							<th scope="col">numero</th>
-							<th scope="col">carta</th>
-							<th scope="col">cantidad</th>
-						</tr>
-					</thead>
-					<tbody id="res">
+			<div class="col-xl-6 col-sm-12">
+				<div class="row">
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/1.png">
+						</a>
+					</div>
 
-					</tbody>
-				</table>
-			</section>
-			<aside class="col-3">
-				<h2>Open Data</h2>
-				<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-					<a class="nav-link active" data-toggle="pill" data-api="https://www.datos.gov.co/resource/f7y6-p677.json" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true">Enjambre Fase 1</a>
-					<a class="nav-link" data-toggle="pill" data-api="https://www.datos.gov.co/resource/sdrw-rm74.json" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false">Enjambre Fase 2</a>
-					<a class="nav-link" data-toggle="pill" data-api="https://www.datos.gov.co/resource/ax3m-2qmb.json" data-cols='departamento,municipio,direcci_n,administrador,estado' href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false">ViveLabs</a>
-					<a class="nav-link" data-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/2.png">
+						</a>
+					</div>
+
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/3.png">
+						</a>
+					</div>
+
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/4.png">
+						</a>
+					</div>
+
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/5.png">
+						</a>
+					</div>
+
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/6.png">
+						</a>
+					</div>
+
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/7.png">
+						</a>
+					</div>
+
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/8.png">
+						</a>
+					</div>
+
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/9.png">
+						</a>
+					</div>
+
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/10.png">
+						</a>
+					</div>
+
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/11.png">
+						</a>
+					</div>
+
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/12.png">
+						</a>
+					</div>
+
+					<div class="col-xl-3 col-sm-6">
+						<a href="">
+							<img class="carta" src="../img/13.png">
+						</a>
+					</div>
 				</div>
-			</aside>
+				
 
+
+			</div>
+			
+
+			<div class="col-xl-6 col-sm-12">
+				<div>
+					<button id="boton">Cargar</button>
+					<table id="table7" class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">numero</th>
+								<th scope="col">carta</th>
+								<th scope="col">cantidad</th>
+							</tr>
+						</thead>
+						<tbody id="res">
+
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<form>
+						<h1>Registro Cartas</h1>
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input id="numero" type="text" class="form-control" placeholder="Numero">
+
+						</div>
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input id="carta" type="text" class="form-control" placeholder="Carta">
+						</div>
+						
+						<div class="form-group">
+							<input type="button" id="enviar" value="Guardar" class="btn float-right login_btn">
+						</div>
+					</form>
+				</div>
+
+
+			</div>
+			
 		</div>
 
 	</div>
 	<footer class="bg-dark rounded-top text-center">
-		<div class="container py-2">
+		<div class="container py-2 align-items-end">
 			<p class="text-white my-2">
-				Carlos Rene Angarita Sanguino
+				Luis Felipe Cortes Cordoba - 1151318
 			</p>
 		</div>
 	</footer>
